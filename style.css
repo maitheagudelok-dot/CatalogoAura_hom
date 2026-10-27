@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    color: #F8F5F2;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, .subtitulo-categoria {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    background-color: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(212, 163, 115, 0.2);
+}
+
+.logo-header img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E6E1DA;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #D4A373;
+}
+
+/* HERO SECTION / PORTADA */
+.hero {
+    padding-top: 110px;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle, #222222 0%, #121212 100%);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo-hero {
+    max-width: 600px;
+    width: 95%;
+    height: auto;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.8));
+}
+
+.tagline {
+    font-size: 1.15rem;
+    color: #C5A880;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+
+.btn-principal {
+    display: inline-block;
+    padding: 14px 36px;
+    background-color: #D4A373;
+    color: #121212;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-principal:hover {
+    background-color: #EFEAE4;
+    transform: translateY(-2px);
+}
+
+/* SECCIONES DEL CATÁLOGO */
+.contenedor-catalogo {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.categoria-seccion {
+    padding-top: 60px;
+    margin-bottom: 80px;
+}
+
+.encabezado-categoria {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.subtitulo-categoria {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #D4A373;
+    display: block;
+}
+
+.titulo-categoria {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.descripcion-categoria {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #B0AAA2;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+/* GRID DE TARJETAS */
+.grid-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-producto {
+    background: #1C1C1E;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    border: 1px solid #2C2C2E;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-producto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(212, 163, 115, 0.2);
+    border-color: #D4A373;
+}
+
+.contenedor-img {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    overflow: hidden;
+    background-color: #181818;
+}
+
+.contenedor-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card-producto:hover .contenedor-img img {
+    transform: scale(1.06);
+}
+
+.badge-estilo {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: rgba(212, 163, 115, 0.9);
+    color: #121212;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.info-producto {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.info-producto h3 {
+    font-size: 1.35rem;
+    color: #D4A373;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.info-producto p {
+    font-size: 0.86rem;
+    color: #CCCCCC;
+    margin-bottom: 14px;
+    font-weight: 300;
+}
+
+.usos {
+    font-size: 0.76rem;
+    color: #8E8880;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* BOTÓN FLOTANTE WHATSAPP */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    z-index: 2000;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.05);
+    background-color: #1EBE57;
+}
+
+/* FOOTER Y CONTACTO */
+footer {
+    background-color: #0A0A0A;
+    color: #F8F5F2;
+    padding: 60px 20px 30px 20px;
+    text-align: center;
+    border-top: 1px solid #222222;
+}
+
+.contenedor-logo-footer {
+    display: inline-block;
+    background-color: #F8F5F2;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.logo-footer {
+    max-width: 250px;
+    height: auto;
+    display: block;
+}
+
+footer p {
+    color: #8E8880;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.contacto-detalles {
+    margin: 22px 0;
+}
+
+.contacto-detalles p {
+    margin: 8px 0;
+    color: #CCCCCC;
+}
+
+.link-contacto {
+    color: #D4A373;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.link-contacto:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 0.78rem !important;
+    color: #555555 !important;
+    margin-top: 25px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+    }
+
+    .logo-hero {
+        max-width: 320px;
+    }
+
+    .titulo-categoria {
+        font-size: 2.2rem;
+    }
+
+    .grid-catalogo {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+    }
+}
