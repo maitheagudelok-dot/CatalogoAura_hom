@@ -29,14 +29,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 50px;
-    background-color: rgba(18, 18, 18, 0.95);
+    padding: 12px 40px;
+    background-color: rgba(18, 18, 18, 0.98);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(212, 163, 115, 0.2);
 }
 
 .logo-header img {
-    height: 50px;
+    height: 40px;
     width: auto;
     display: block;
 }
@@ -44,14 +44,14 @@ header {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #E6E1DA;
     font-weight: 500;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: color 0.3s;
@@ -63,7 +63,7 @@ nav a:hover {
 
 /* HERO SECTION / PORTADA */
 .hero {
-    padding-top: 110px;
+    padding-top: 100px;
     min-height: 85vh;
     display: flex;
     justify-content: center;
@@ -75,29 +75,29 @@ nav a:hover {
 }
 
 .logo-hero {
-    max-width: 600px;
-    width: 95%;
+    max-width: 550px;
+    width: 90%;
     height: auto;
     margin-bottom: 25px;
     filter: drop-shadow(0 8px 20px rgba(0,0,0,0.8));
 }
 
 .tagline {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     color: #C5A880;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     font-weight: 300;
 }
 
 .btn-principal {
     display: inline-block;
-    padding: 14px 36px;
+    padding: 14px 34px;
     background-color: #D4A373;
     color: #121212;
     text-decoration: none;
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -118,43 +118,43 @@ nav a:hover {
 }
 
 .categoria-seccion {
-    padding-top: 60px;
-    margin-bottom: 80px;
+    padding-top: 50px;
+    margin-bottom: 60px;
 }
 
 .encabezado-categoria {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .subtitulo-categoria {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-style: italic;
     color: #D4A373;
     display: block;
 }
 
 .titulo-categoria {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 600;
     color: #FFFFFF;
     letter-spacing: 1px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .descripcion-categoria {
     max-width: 750px;
     margin: 0 auto;
     color: #B0AAA2;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     font-weight: 300;
 }
 
 /* GRID DE TARJETAS */
 .grid-catalogo {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 25px;
 }
 
 .card-producto {
@@ -169,7 +169,7 @@ nav a:hover {
 }
 
 .card-producto:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(212, 163, 115, 0.2);
     border-color: #D4A373;
 }
@@ -193,26 +193,26 @@ nav a:hover {
 }
 
 .card-producto:hover .contenedor-img img {
-    transform: scale(1.06);
+    transform: scale(1.05);
 }
 
 .badge-estilo {
     position: absolute;
-    top: 12px;
-    right: 12px;
-    background-color: rgba(212, 163, 115, 0.9);
+    top: 10px;
+    right: 10px;
+    background-color: rgba(212, 163, 115, 0.95);
     color: #121212;
-    font-size: 0.68rem;
+    font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    padding: 4px 10px;
+    padding: 4px 8px;
     border-radius: 2px;
     z-index: 2;
 }
 
 .info-producto {
-    padding: 22px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -220,21 +220,21 @@ nav a:hover {
 }
 
 .info-producto h3 {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     color: #D4A373;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-weight: 600;
 }
 
 .info-producto p {
-    font-size: 0.86rem;
+    font-size: 0.84rem;
     color: #CCCCCC;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     font-weight: 300;
 }
 
 .usos {
-    font-size: 0.76rem;
+    font-size: 0.74rem;
     color: #8E8880;
     font-weight: 500;
     text-transform: uppercase;
@@ -244,14 +244,14 @@ nav a:hover {
 /* BOTÓN FLOTANTE WHATSAPP */
 .btn-whatsapp {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 25px;
+    right: 25px;
     background-color: #25D366;
     color: #FFFFFF;
     text-decoration: none;
-    padding: 12px 22px;
+    padding: 10px 18px;
     border-radius: 30px;
-    font-size: 0.88rem;
+    font-size: 0.82rem;
     font-weight: 600;
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
     z-index: 2000;
@@ -267,7 +267,7 @@ nav a:hover {
 footer {
     background-color: #0A0A0A;
     color: #F8F5F2;
-    padding: 60px 20px 30px 20px;
+    padding: 50px 20px 25px 20px;
     text-align: center;
     border-top: 1px solid #222222;
 }
@@ -275,29 +275,29 @@ footer {
 .contenedor-logo-footer {
     display: inline-block;
     background-color: #F8F5F2;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .logo-footer {
-    max-width: 250px;
+    max-width: 220px;
     height: auto;
     display: block;
 }
 
 footer p {
     color: #8E8880;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-weight: 300;
 }
 
 .contacto-detalles {
-    margin: 22px 0;
+    margin: 18px 0;
 }
 
 .contacto-detalles p {
-    margin: 8px 0;
+    margin: 6px 0;
     color: #CCCCCC;
 }
 
@@ -314,35 +314,80 @@ footer p {
 }
 
 .copyright {
-    font-size: 0.78rem !important;
+    font-size: 0.75rem !important;
     color: #555555 !important;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
-/* RESPONSIVO */
-@media (max-width: 768px) {
+/* RESPONSIVO PARA CELULARES */
+@media (max-width: 900px) {
     header {
-        padding: 10px 20px;
+        flex-direction: column;
+        padding: 8px 10px;
+        gap: 6px;
+    }
+
+    .logo-header img {
+        height: 32px;
     }
 
     nav ul {
-        gap: 12px;
+        gap: 8px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     nav a {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
+        letter-spacing: 0.5px;
+    }
+
+    .hero {
+        padding-top: 130px; /* Deja espacio para que el menú de dos líneas no tape la portada */
+        min-height: 75vh;
     }
 
     .logo-hero {
-        max-width: 320px;
+        max-width: 260px;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
     }
 
     .titulo-categoria {
-        font-size: 2.2rem;
+        font-size: 1.9rem;
+    }
+
+    .subtitulo-categoria {
+        font-size: 1rem;
+    }
+
+    .descripcion-categoria {
+        font-size: 0.85rem;
+        padding: 0 10px;
     }
 
     .grid-catalogo {
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .info-producto {
+        padding: 12px;
+    }
+
+    .info-producto h3 {
+        font-size: 1rem;
+    }
+
+    .info-producto p {
+        font-size: 0.75rem;
+        margin-bottom: 8px;
+    }
+
+    .usos {
+        font-size: 0.65rem;
     }
 }
